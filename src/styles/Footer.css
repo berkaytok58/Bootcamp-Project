@@ -1,0 +1,60 @@
+/* CSS dosyanızda */
+footer {
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+.links a {
+    margin: 0 1rem;
+    color: #FFF6E0;
+    position: relative;
+    padding-bottom: 2px;
+    font-weight: 700;
+  }
+  
+  .links a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #FFF6E0;
+      transition: width 0.3s ease;
+    }
+    .links a:hover::after {
+        width: 100%;
+    }
+.copyright{
+    font-weight: 600;
+    font-style: 1.3rem;
+    color: #FFF6E0;
+}
+@media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .links {
+      margin-bottom: 1rem;
+    }
+  
+    .links a {
+      margin: 0.5rem 0;
+      display: block;
+    }
+  }
